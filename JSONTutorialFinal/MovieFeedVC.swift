@@ -31,9 +31,8 @@ class MovieFeedVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! MovieCell
         let movie = moviesArray[indexPath.row]
-        cell.movieTitleLabel.text = movie.title.uppercased()
-        cell.dateLabel.text = "Release date: \(movie.releaseDate)"
-        cell.priceLabel.text = "\(movie.purchasePrice.amount) \(movie.purchasePrice.currency)"
+        let movieViewModel = MovieViewModel(model: movie)
+        cell.displayMovieInCell(using: movieViewModel)
         return cell
     }
     

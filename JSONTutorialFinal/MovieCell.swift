@@ -86,5 +86,12 @@ class MovieCell: UITableViewCell {
         dateLabel.topAnchor.constraint(equalTo: movieTitleLabel.bottomAnchor).isActive = true
         
     }
+    
+    func displayMovieInCell(using viewModel: MovieViewModel) {
+        
+        movieTitleLabel.text = viewModel.title
+        dateLabel.text = viewModel.releaseDate
+        priceLabel.text = viewModel.purchasePrice
+    }
 }
 

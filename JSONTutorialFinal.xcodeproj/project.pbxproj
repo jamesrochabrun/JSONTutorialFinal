@@ -15,6 +15,7 @@
 		7B031A911E88C58D00892A98 /* MovieFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A901E88C58D00892A98 /* MovieFeedVC.swift */; };
 		7B031A931E88C59900892A98 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A921E88C59900892A98 /* MovieCell.swift */; };
 		7B031A951E88C5A100892A98 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A941E88C5A100892A98 /* Movie.swift */; };
+		7B031A971E88C9AD00892A98 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A961E88C9AD00892A98 /* MovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7B031A901E88C58D00892A98 /* MovieFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieFeedVC.swift; sourceTree = "<group>"; };
 		7B031A921E88C59900892A98 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7B031A941E88C5A100892A98 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		7B031A961E88C9AD00892A98 /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 		7B031A8D1E88C54E00892A98 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7B031A961E88C9AD00892A98 /* MovieViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B031A5F1E88C52000892A98 /* AppDelegate.swift in Sources */,
+				7B031A971E88C9AD00892A98 /* MovieViewModel.swift in Sources */,
 				7B031A911E88C58D00892A98 /* MovieFeedVC.swift in Sources */,
 				7B031A951E88C5A100892A98 /* Movie.swift in Sources */,
 				7B031A931E88C59900892A98 /* MovieCell.swift in Sources */,
