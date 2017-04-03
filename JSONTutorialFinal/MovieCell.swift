@@ -17,6 +17,7 @@ class MovieCell: UITableViewCell {
         iv.layer.cornerRadius = 40
         iv.backgroundColor = #colorLiteral(red: 1, green: 0.3864146769, blue: 0.4975627065, alpha: 1)
         iv.translatesAutoresizingMaskIntoConstraints = false
+        iv.clipsToBounds = true
         return iv
     }()
     
@@ -92,6 +93,9 @@ class MovieCell: UITableViewCell {
         movieTitleLabel.text = viewModel.title
         dateLabel.text = viewModel.releaseDate
         priceLabel.text = viewModel.purchasePrice
+        movieImage.loadImageUsingCacheWithURLString(viewModel.imageURL, placeHolder: nil) { (bool) in
+            //perform actions if needed
+        }
     }
 }
 

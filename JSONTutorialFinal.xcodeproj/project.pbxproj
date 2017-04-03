@@ -16,6 +16,9 @@
 		7B031A931E88C59900892A98 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A921E88C59900892A98 /* MovieCell.swift */; };
 		7B031A951E88C5A100892A98 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A941E88C5A100892A98 /* Movie.swift */; };
 		7B031A971E88C9AD00892A98 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B031A961E88C9AD00892A98 /* MovieViewModel.swift */; };
+		7B3480261E8CA16D00C23A10 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3480251E8CA16D00C23A10 /* JSONDownloader.swift */; };
+		7BB4E2C21E92B190006FA67A /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB4E2C11E92B190006FA67A /* MovieService.swift */; };
+		7BB4E2C51E92F4A6006FA67A /* Cachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB4E2C41E92F4A6006FA67A /* Cachable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		7B031A921E88C59900892A98 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		7B031A941E88C5A100892A98 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		7B031A961E88C9AD00892A98 /* MovieViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		7B3480251E8CA16D00C23A10 /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		7BB4E2C11E92B190006FA67A /* MovieService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
+		7BB4E2C41E92F4A6006FA67A /* Cachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cachable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				7B031A5E1E88C52000892A98 /* AppDelegate.swift */,
+				7BB4E2C31E92F489006FA67A /* Protocols */,
+				7B3480241E8CA15C00C23A10 /* Service */,
 				7B031A8F1E88C55F00892A98 /* View */,
 				7B031A8E1E88C55500892A98 /* Controller */,
 				7B031A8D1E88C54E00892A98 /* ViewModel */,
@@ -161,6 +169,23 @@
 				7B031A921E88C59900892A98 /* MovieCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		7B3480241E8CA15C00C23A10 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7B3480251E8CA16D00C23A10 /* JSONDownloader.swift */,
+				7BB4E2C11E92B190006FA67A /* MovieService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		7BB4E2C31E92F489006FA67A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7BB4E2C41E92F4A6006FA67A /* Cachable.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,11 +324,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3480261E8CA16D00C23A10 /* JSONDownloader.swift in Sources */,
 				7B031A5F1E88C52000892A98 /* AppDelegate.swift in Sources */,
 				7B031A971E88C9AD00892A98 /* MovieViewModel.swift in Sources */,
 				7B031A911E88C58D00892A98 /* MovieFeedVC.swift in Sources */,
+				7BB4E2C51E92F4A6006FA67A /* Cachable.swift in Sources */,
 				7B031A951E88C5A100892A98 /* Movie.swift in Sources */,
 				7B031A931E88C59900892A98 /* MovieCell.swift in Sources */,
+				7BB4E2C21E92B190006FA67A /* MovieService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +572,7 @@
 				7B031A851E88C52000892A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B031A861E88C52000892A98 /* Build configuration list for PBXNativeTarget "JSONTutorialFinalTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +581,7 @@
 				7B031A881E88C52000892A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B031A891E88C52000892A98 /* Build configuration list for PBXNativeTarget "JSONTutorialFinalUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +590,7 @@
 				7B031A8B1E88C52000892A98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

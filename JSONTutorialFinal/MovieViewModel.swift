@@ -12,18 +12,14 @@ import UIKit
 struct MovieViewModel {
     
     let title: String
-    let imageURL: String?
+    let imageURL: String
     let releaseDate: String
     let purchasePrice: String
-    let summary: String?
+    let summary: String
     
     init(model: Movie) {
         self.title = model.title.uppercased()
-        if let imageURL = model.imageURL {
-            self.imageURL = imageURL
-        } else {
-            self.imageURL = nil
-        }
+        self.imageURL = model.imageURL
         self.releaseDate = "Relase date: \(model.releaseDate)"
         if let doublePurchasePrice = Double(model.purchasePrice.amount) {
             self.purchasePrice = String(format: "%.02f %@", doublePurchasePrice, model.purchasePrice.currency)
