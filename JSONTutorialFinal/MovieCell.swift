@@ -25,7 +25,7 @@ class MovieCell: UITableViewCell {
         let l = UILabel()
         l.numberOfLines = 0
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        l.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         l.textAlignment = .left
         l.textColor = .white
         return l
@@ -35,7 +35,7 @@ class MovieCell: UITableViewCell {
         let l = UILabel()
         l.numberOfLines = 0
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.caption1)
+        l.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.caption1)
         l.textAlignment = .left
         l.textColor = .white
         return l
@@ -45,13 +45,13 @@ class MovieCell: UITableViewCell {
         let l = UILabel()
         l.numberOfLines = 0
         l.translatesAutoresizingMaskIntoConstraints = false
-        l.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
+        l.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
         l.textAlignment = .right
         l.textColor = .white
         return l
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUpViews()
     }

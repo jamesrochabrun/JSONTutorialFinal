@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 class MovieFeedVC: UITableViewController {
-    
+
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
     private let cellID = "cellID"
     private var moviesArray = [Movie]() {
         didSet {
